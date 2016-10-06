@@ -32,4 +32,9 @@ repos = sorted(repos, key=lambda repo: repo['watchers'], reverse=True)
 
 # print
 for repo in repos:
-        print '* [{}]({}) {}'.format(repo['name'], repo['html_url'], repo['description'])
+    name = repo.get('name')
+    url = repo.get('html_url')
+    desc = repo.get('description', 'No description.')
+    if desc is None:
+        desc = ''
+    print '* [{}]({}) {}'.format(name, url, desc).decode('utf-8')
