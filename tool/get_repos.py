@@ -61,7 +61,9 @@ def show_repos_as_table(repos):
 
 if __name__ == '__main__':
     print ('# Tencent Open Source Works\n'
-            '腾讯开源作品整理. (仅收录Github上的项目).\n'
+            '腾讯开源作品整理. (非官方，内容待完善，仅收录Github上的项目).\n'
+            '\n'
+            '使用[get_repos.py](./tool/)生成.\n'
             '\n'
             'From: \n'
             '\n')
