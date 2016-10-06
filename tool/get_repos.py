@@ -43,17 +43,20 @@ def show_repos_as_table(repos):
         return
     # sort by stars
     repos = sorted(repos, key=lambda repo: repo.get('stargazers_count'), reverse=True)
-    print '|Name|Star|Description|'
-    print '|----|----|-----------|'
+    print '|Name|Star|Language|Description|'
+    print '|----|----|--------|-----------|'
     for repo in repos:
         name = repo.get('name')
         url = repo.get('html_url')
-        desc = repo.get('description', 'No description.')
+        language = repo.get('language')
+        desc = repo.get('description')
         star = repo.get('stargazers_count')
+        if language is None:
+            language = ''
         if desc is None:
             desc = ''
         desc = desc.strip().replace('\n', '').replace('\r', '')
-        print '| [{}]({}) | {} | {} |'.format(name, url, star, desc).decode('utf-8')
+        print '| [{}]({}) | {} | {} | {} |'.format(name, url, star, language, desc).decode('utf-8')
 
 
 if __name__ == '__main__':
