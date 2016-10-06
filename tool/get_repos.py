@@ -60,16 +60,19 @@ if __name__ == '__main__':
     print ('# Tencent Open Source Works\n'
             '腾讯开源作品整理. (仅收录Github上的项目).\n'
             '\n'
-            '[腾讯开源](http://opensource.tencent.com/)\n'
+            'From: \n'
             '\n')
 
-    names = ('Tencent', 'tencent-wechat', 'weui', 'QMUI', 'TencentOpen', 'AlloyTeam')
+    names = ('Tencent', 'tencent-wechat', 'weui', 'weixin', 'QMUI', 'TencentOpen', 'AlloyTeam', 'frozenui', 'tencent-php')
     min_star = 10
     repos = []
     for name in names:
         print '* [{}]({})'.format( name, 'https://github.com/'+name )
         repos += get_repos_for_one(name)
 
+    print ('\n'
+            'Repos:\n'
+            '\n')
     repos = filter_repos_by_stars(repos, min_star)
     print 
     show_repos_as_table(repos)
