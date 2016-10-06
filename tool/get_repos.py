@@ -58,18 +58,22 @@ def show_repos_as_table(repos):
 
 if __name__ == '__main__':
     print ('# Tencent Open Source Works\n'
-            '腾讯开源作品整理.\n'
+            '腾讯开源作品整理. (仅收录Github上的项目).\n'
             '\n'
             '[腾讯开源](http://opensource.tencent.com/)\n'
             '\n')
 
     names = ('Tencent', 'tencent-wechat', 'weui', 'QMUI', 'TencentOpen', 'AlloyTeam')
     min_star = 10
+    repos = []
     for name in names:
-        repos = get_repos_for_one(name)
-        repos = filter_repos_by_stars(repos, min_star)
-        print '## [{}]({})'.format( name, 'https://github.com/'+name )
-        print 
-        show_repos_as_table(repos)
-        print
-        print
+        print '* [{}]({})'.format( name, 'https://github.com/'+name )
+        repos += get_repos_for_one(name)
+
+    repos = filter_repos_by_stars(repos, min_star)
+    print 
+    show_repos_as_table(repos)
+    print
+    print
+    print '## License'
+    print 'MIT'
