@@ -1,7 +1,7 @@
 # Tencent Open Source Works
 腾讯开源作品整理. (非官方，内容待完善，仅收录Github上的项目).
 
-使用[get_repos.py](./tool/)生成.
+使用 [get_repos.py](./tool/) 生成.
 
 From: 
 
