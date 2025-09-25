@@ -68,7 +68,7 @@ if __name__ == '__main__':
             'From: \n'
             '\n')
 
-    names = ('Tencent', 'tencent-wechat', 'weui', 'weixin', 'QMUI', 'TencentOpen', 'AlloyTeam', 'frozenui', 'tencent-php')
+    names = ('Tencent','TencentCloudADP', 'tencent-wechat', 'weui', 'weixin', 'QMUI', 'TencentOpen', 'AlloyTeam', 'frozenui', 'tencent-php')
     min_star = 10
     repos = []
     for name in names:
