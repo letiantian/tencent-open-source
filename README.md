@@ -7,6 +7,7 @@ From:
 
 
 * [Tencent](https://github.com/Tencent)
+* [Tencent Cloud ADP](https://github.com/TencentCloudADP)
 * [tencent-wechat](https://github.com/tencent-wechat)
 * [weui](https://github.com/weui)
 * [weixin](https://github.com/weixin)
@@ -22,6 +23,8 @@ Repos:
 
 |Name|Star|Language|Description|
 |----|----|--------|-----------|
+| [youtu-agent](https://github.com/TencentCloudADP/youtu-agent) | [![GitHub stars](https://img.shields.io/github/stars/TencentCloudADP/youtu-graphrag?style=social)](https://github.com/TencentCloudADP/youtu-agent) | Python | A simple yet powerful agent framework that delivers with open-source models |
+| [youtu-graphrag](https://github.com/TencentCloudADP/youtu-graphrag) | [![GitHub stars](https://img.shields.io/github/stars/TencentCloudADP/youtu-graphrag?style=social)](https://github.com/TencentCloudADP/youtu-graphrag) | Python | Official repository of Youtu-GraphRAG: Vertically Unified Agents for Graph Retrieval-Augmented Complex Reasoning |
 | [mars](https://github.com/Tencent/mars) | 11611 | C++ | Mars is a cross-platform network component  developed by WeChat. |
 | [Mars](https://github.com/AlloyTeam/Mars) | 7676 |  | 腾讯移动 Web 前端知识库 |
 | [omi](https://github.com/Tencent/omi) | 6551 | JavaScript | Next generation web framework using web components with omio fallback(IE8+) in 4kb JavaScript. Easy to MVVM. |
